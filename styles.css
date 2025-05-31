@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #222;
+    color: white;
+    font-family: sans-serif;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.intro-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 70px;
+    padding-bottom: 120px;
+    justify-content: center;
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 0.2rem;
+}
+
+.pen-stage {
+    height: 55vh;
+    width: 100%;
+    background-color: #222;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    overflow: hidden;
+}
+
+.pen-cap,
+.pen-body {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    height: auto;
+    max-height: 400px; /* increase this value to make pen bigger */
+    pointer-events: none;
+    z-index: 11;
+    padding-left: 100px;
+}
+
+/* Position cap slightly above center */
+.pen-cap {
+    top: calc(50% - 50px); /* adjust to get precise overlap */
+}
+
+/* Position body slightly below center */
+.pen-body {
+    top: calc(40% + 50px); /* adjust until edges meet smoothly */
+}
+
+/* Scroll content */
+.spacer {
+    height: 45vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.spacer-two {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+/* 2. Bio Section */
+.bio-section {
+    color: white;
+    padding: 4rem 2rem;
+    text-align: center;
+    letter-spacing: 1px;
+}
+.bio-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 16px;
+    object-fit: cover;
+}
+.bio-name {
+    letter-spacing: 0.3em;
+    font-size: 0.9rem;
+    color: #aaa;
+    margin-top: 1rem;
+    font-family: sans-serif;
+}
+.bio-title {
+    font-size: 3rem;
+    color: #f45e01;
+    margin: 0.5rem 0;
+}
+.bio-desc {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: auto;
+    line-height: 1.5rem;
+}
+
+.my-work .bio-title{
+    font-size: 3rem;
+    color: #aaa;
+    margin: 0.5rem 0;
+    text-align: center;
+}
+
+.my-work .bio-desc{
+    text-align: center;
+    margin-bottom: 40vh;
+    line-height: 1.5rem;
+}
+
+/* 3. Project Section */
+.project-card {
+    margin: 4rem auto;
+    padding: 2rem;
+    border-radius: 1rem;
+    max-width: 1200px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+.project-type {
+    font-size: 0.9rem;
+    color: #aaa;
+    letter-spacing: 0.1em;
+    padding-bottom: 10px;
+}
+.project-title {
+    font-size: 2rem;
+}
+
+.project-desc {
+    font-size: 1rem;
+    margin: 1rem 0;
+    line-height: 1.35rem;
+}
+.project-btn {
+    display: inline-block;
+    border: 2px solid white;
+    padding: 0.5rem 1.5rem;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 1rem;
+}
+.project-image {
+    width: 100%;
+    max-height: 600px;
+    object-fit: cover;
+    margin-top: 1rem;
+    border-radius: 12px;
+}
+
+.navbar {
+    width: 100%;
+    padding: 2rem 2rem;
+    background-color: #222;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    box-shadow: 0 20px 15px #222;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.nav-container .logo{
+    letter-spacing: 3px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.bottom-bar-mask {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 75px; /* adjust height to match your pen-body clearance */
+    background-color: #222;
+    box-shadow: 0 -40px 40px #222;
+    z-index: 5; /* behind the pen (z-index: 11), above content */
+}
+
+.recap-trigger {
+    height: 120vh; /* enough scroll space for the recap effect */
+    background: transparent;
+}
+
+.footer {
+    background-color: #222;
+    color: #999;
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.9rem;
+    margin-top: 4rem;
+    padding-bottom: 150px;
+}
