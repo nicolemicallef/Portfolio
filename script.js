@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     
+
     gsap.registerPlugin(ScrollTrigger);
     
     // PEN UNCAPPING — near top of page
@@ -294,20 +295,14 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
     
-    const copyEmailBtn = document.getElementById('copy-email-btn');
-    
-    if (copyEmailBtn) {
-        copyEmailBtn.addEventListener('click', () => {
-            const email = "nicole-micallef@outlook.com";
-            navigator.clipboard.writeText(email).then(() => {
-                const originalText = copyEmailBtn.textContent;
-                copyEmailBtn.textContent = "Copied!";
-                
-                setTimeout(() => {
-                    copyEmailBtn.textContent = originalText;
-                }, 2000);
-            });
-        });
-    }
-    
+});
+
+document.getElementById("copy-email-btn").addEventListener("click", function (e) {
+    e.preventDefault();
+    navigator.clipboard.writeText("nicole-micallef@outlook.com").then(() => {
+        this.textContent = "Copied!";
+        setTimeout(() => {
+            this.textContent = "Copy Email";
+        }, 2000);
+    });
 });
