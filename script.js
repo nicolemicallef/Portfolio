@@ -56,64 +56,64 @@ document.addEventListener("DOMContentLoaded", () => {
     // Modal image sets
     const modalImageSets = {
         "modal-unsung-hero": [
-            "Images/unsung-hero-mockup.png",
-            "Images/driving-license-inner.png",
-            "Images/driving-license-outer.png",
-            "Images/social-security-card-front.png",
-            "Images/social-security-card-back.png",
-            "Images/marriage-certificate.png",
-            "Images/birth-announcement-front.png",
-            "Images/birth-announcement-back.png",
-            "Images/newspaper.png",
-            "Images/medical-file.png"
+            "Images/unsung-hero-mockup.jpg",
+            "Images/driving-license-inner.jpg",
+            "Images/driving-license-outer.jpg",
+            "Images/social-security-card-front.jpg",
+            "Images/social-security-card-back.jpg",
+            "Images/marriage-certificate.jpg",
+            "Images/birth-announcement-front.jpg",
+            "Images/birth-announcement-back.jpg",
+            "Images/newspaper.jpg",
+            "Images/medical-file.jpg"
         ],
         
         "modal-baskerville": [
-            "Images/baskerville-mockup.png",
-            "Images/baskerville-front-page.png",
-            "Images/baskerville-page2.png",
-            "Images/baskerville-page3.png",
-            "Images/baskerville-page4.png",
-            "Images/baskerville-page5.png",
-            "Images/baskerville-page6.png",
-            "Images/baskerville-page7.png"
+            "Images/baskerville-mockup.jpg",
+            "Images/baskerville-front-page.jpg",
+            "Images/baskerville-page2.jpg",
+            "Images/baskerville-page3.jpg",
+            "Images/baskerville-page4.jpg",
+            "Images/baskerville-page5.jpg",
+            "Images/baskerville-page6.jpg",
+            "Images/baskerville-page7.jpg"
         ],
         
         "modal-signage": [
-            "Images/signage-editorial-mockup.png",
-            "Images/signage-page1.png",
-            "Images/signage-page2.png"
+            "Images/signage-editorial-mockup.jpg",
+            "Images/signage-page1.jpg",
+            "Images/signage-page2.jpg"
         ],
         
         "modal-karl-gerstner": [
-            "Images/akzidenz-grotesk-mockup.png",
-            "Images/karl-gerstner-spread.png"
+            "Images/akzidenz-grotesk-mockup.jpg",
+            "Images/karl-gerstner-spread.jpg"
         ],
         
         "modal-chronocraft": [
-            "Images/chronocraft-front-page.png",
-            "Images/chronocraft-logo-primary.png",
-            "Images/chronocraft-logo-secondary.png",
-            "Images/chronocraft-brandpalette.png",
-            "Images/chronocraft-mockups.png"
+            "Images/chronocraft-front-page.jpg",
+            "Images/chronocraft-logo-primary.jpg",
+            "Images/chronocraft-logo-secondary.jpg",
+            "Images/chronocraft-brandpalette.jpg",
+            "Images/chronocraft-mockups.jpg"
         ],
         
         "modal-american-psycho": [
-            "Images/american-psycho-mockup.png",
-            "Images/american-psycho-poster-01.png",
-            "Images/american-psycho-poster-02.png",
-            "Images/american-psycho-poster-03.png",
-            "Images/american-psycho-logo-11.png"
+            "Images/american-psycho-mockup.jpg",
+            "Images/american-psycho-poster-01.webp",
+            "Images/american-psycho-poster-02.webp",
+            "Images/american-psycho-poster-03.webp",
+            "Images/american-psycho-logo-11.jpg"
         ],
         
         "modal-valletta-vibes": [
-            "Images/valletta-vibes-mockup.png",
-            "Images/valletta-vibes-18.png",
-            "Images/valletta-vibes-poster-14-mockup.png",
-            "Images/valletta-vibes-poster-14.png",
-            "Images/valletta-vibes-brochure-together.png",
-            "Images/valletta-vibes-brochure-mockup.png",
-            "Images/valletta-vibes-brochure-pages.png"
+            "Images/valletta-vibes-mockup.jpg",
+            "Images/valletta-vibes-18.jpg",
+            "Images/valletta-vibes-poster-14-mockup.jpg",
+            "Images/valletta-vibes-poster-14.jpg",
+            "Images/valletta-vibes-brochure-together.jpg",
+            "Images/valletta-vibes-brochure-mockup.jpg",
+            "Images/valletta-vibes-brochure-pages.jpg"
         ],
     };
     
