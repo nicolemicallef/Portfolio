@@ -145,15 +145,25 @@ body {
     font-size: 1rem;
     margin: 1rem 0;
     line-height: 1.35rem;
+    letter-spacing: 0.06rem
 }
 .project-btn {
-    display: inline-block;
-    border: 2px solid white;
-    padding: 0.5rem 1.5rem;
-    text-decoration: none;
-    color: white;
-    margin-bottom: 1rem;
+    border: 2px solid #f45e01;
+    background-color: transparent;
+    color: #f45e01;
+    font-size: 1rem;
+    padding: 0.6rem 1.6rem;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-family: inherit;
 }
+
+.project-btn:hover {
+    background-color: #f45e01;
+    color: #111;
+}
+
 .project-image {
     width: 100%;
     max-height: 600px;
@@ -206,21 +216,164 @@ body {
     width: 100%;
     height: 75px; /* adjust height to match your pen-body clearance */
     background-color: #222;
-    box-shadow: 0 -40px 40px #222;
-    z-index: 5; /* behind the pen (z-index: 11), above content */
+    box-shadow: 0 -30px 15px #222;
+    z-index: 9; /* behind the pen (z-index: 11), above content */
 }
 
 .recap-trigger {
-    height: 120vh; /* enough scroll space for the recap effect */
+    height: 100vh; /* enough scroll space for the recap effect */
     background: transparent;
 }
 
-.footer {
+footer {
     background-color: #222;
     color: #999;
     text-align: center;
     padding: 2rem;
     font-size: 0.9rem;
-    margin-top: 4rem;
-    padding-bottom: 150px;
+    padding-bottom: 72vh;
+    z-index: 0;
+    position: relative;
+}
+
+
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+}
+
+
+.modal-content {
+    background-color: #222;
+    border-radius: 16px;
+    padding: 3rem 3rem 2rem 3rem;
+    width: 90vw;
+    max-width: 800px;
+    max-height: 90vh;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    color: white;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 2;
+    padding: 0;
+    line-height: 1;
+}
+.close-btn:hover {
+    color: #f45e01;
+}
+
+.modal-img {
+    width: 100%;
+    height: auto;
+    max-height: 70vh;
+    object-fit: contain;
+    border-radius: 12px;
+    
+}
+
+
+.carousel-controls {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.carousel-controls button {
+    background-color: transparent;
+    border: 2px solid #f45e01;
+    color: #f45e01;
+    padding: 0.5rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.carousel-controls button:hover {
+    background-color: #f45e01;
+    color: #111;
+}
+
+.magnifier-lens {
+    position: absolute;
+    border: 3px solid #f45e01;
+    border-radius: 50%;
+    cursor: none;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    pointer-events: none;
+    display: none;
+    z-index: 10;
+}
+
+.magnifier-lens img {
+    position: absolute;
+    width: 200%; /* zoom level */
+    height: auto;
+}
+
+.toggle-magnifier {
+    margin-top: 1rem;
+    padding: 0.5rem 1.5rem;
+    background-color: #f45e01;
+    color: #111;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+}
+.toggle-magnifier:hover {
+    background-color: #d94500;
+}
+
+.projects-end {
+    height: 0vh;
+    background: transparent;
+}
+
+.pen-wrapper {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.pen-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #1f1f1f; /* match your page background */
+    z-index: 9; /* below pen (which is z-index: 10 or higher), above all other content */
+    pointer-events: none;
+    transition: opacity 0.5s ease;
+    opacity: 1;
+}
+
+.pen-overlay.hide {
+    opacity: 0;
 }

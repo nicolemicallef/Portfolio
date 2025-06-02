@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Home Page</title>
+    <title>Nicole's Portfolio</title>
+    <link rel="icon" type="image/png" href="Images/favicon.png">
     <link rel="stylesheet" href="styles.css">
     
 </head>
@@ -24,6 +25,7 @@
         <h1>WHERE PROCESS MEETS PURPOSE</h1>
         
         <!-- ✒️ Pen Container -->
+        
         <img src="Images/scroll-ink-quill-02.png" class="pen-cap" alt="Pen cap">
         <img src="Images/scroll-ink-quill-01.png" class="pen-body" alt="Pen body">
     </section>
@@ -41,37 +43,215 @@
     </section>
     
     <div class="spacer-two"></div>
-
+    
     <section class="my-work">
         <h2 class="bio-title">My Work</h2>
         <p class="bio-desc">
             Design is never accidental, and I am drawn to work that is built with purpose. I aim to explore how intention shapes everything from layout to message — and how clarity can be creative.
         </p>
     </section>
-
+    
     <!-- 🧪 Project Section -->
+    <section class="project-card">
+        <p class="project-type">TYPOGRAPHIC EXPERIENCE</p>
+        <h3 class="project-title">Unsung Hero</h3>
+        <p class="project-desc">
+            “Unsung Hero” is a visual tribute to the quiet legacy of everyday lives, told through the lens of personal documentation. This project assembles real ephemera — birth certificates, medical reports, IDs, and announcements — to honor the story of one individual and, by extension, the generation they represent.
+        </p>
+        <button class="project-btn" data-modal="modal-unsung-hero">View More</button>
+        <img src="Images/unsung-hero-mockup.png" alt="Unsung Hero Project compilation" class="project-image">
+    </section>
+    
+    
+    <section class="project-card">
+        <p class="project-type">TYPOGRAPHIC EXPERIMENTATION</p>
+        <h3 class="project-title">Baskerville Font Book</h3>
+        <p class="project-desc">
+            This project highlights the enduring sophistication of the Baskerville typeface, drawing on its historical roots and distinctive contrast to create a carefully composed font specimen that balances clarity with character.
+        </p>
+        <button class="project-btn" data-modal="modal-baskerville">View More</button>
+        <img src="Images/baskerville-mockup.png" alt="Baskerville Font Book Project compilation" class="project-image">
+    </section>
+    
     <section class="project-card">
         <p class="project-type">EDITORIAL SPREAD</p>
         <h3 class="project-title">Signage Interview</h3>
         <p class="project-desc">
-            Researched the history of signage globally and its applications in the local scene, with an interview from local graphic designer Matthew Demarco, who runs the Malta Type accounts in an effort to document the typography and signage heritage of Malta. 
+            This project explores the global history of signage and its relevance within the local Maltese context. It features an interview with graphic designer Matthew Demarco, founder of the Malta Type accounts, who is dedicated to documenting and preserving Malta’s rich typography and signage heritage.
         </p>
+        <button class="project-btn" data-modal="modal-signage">View More</button>
         <img src="Images/signage-editorial-mockup.png" alt="Signage Project mockup" class="project-image">
     </section>
     
-
     <section class="project-card">
         <p class="project-type">EDITORIAL SPREAD</p>
-        <h3 class="project-title">Signage Interview</h3>
+        <h3 class="project-title">Karl Gerstner Article</h3>
         <p class="project-desc">
-            Researched the history of signage globally and its applications in the local scene, with an interview from local graphic designer Matthew Demarco, who runs the Malta Type accounts in an effort to document the typography and signage heritage of Malta. 
+            An exploration of Karl Gerstner’s systematic design philosophy and the enduring legacy of Akzidenz Grotesk — a typeface that helped define the Swiss Style and continues to influence modern visual communication. 
         </p>
-        <img src="Images/signage-editorial-mockup.png" alt="Signage Project mockup" class="project-image">
+        <button class="project-btn" data-modal="modal-karl-gerstner">View More</button>
+        <img src="Images/akzidenz-grotesk-mockup.png" alt="Karl Gerstner Project mockup" class="project-image">
     </section>
-
-    <footer class="footer">
-        <p>2025 Nicole Micallef — All rights reserved.</p>
-    </footer>
+    
+    <section class="project-card">
+        <p class="project-type">BRANDING</p>
+        <h3 class="project-title">ChronoCraft</h3>
+        <p class="project-desc">
+            ChronoCraft is a brand identity project for a fictitious luxury watchmaker rooted in tradition, precision, and timeless design. The brand celebrates the artistry of watchmaking, where timekeeping meets craftsmanship, appealing to modern connoisseurs who value both form and function.
+        </p>
+        <button class="project-btn" data-modal="modal-chronocraft">View More</button>
+        <img src="Images/chronocraft-front-page.png" alt="Chronocraft logo" class="project-image">
+    </section>
+    
+    <section class="project-card">
+        <p class="project-type">POSTER DESIGN</p>
+        <h3 class="project-title">American Psycho - 25th Anniversary</h3>
+        <p class="project-desc">
+            Posters and logo design created as part of a collector’s boxset for the 25th anniversary of American Psycho, using stark visuals to reflect the protagonist’s mental deterioration.
+        </p>
+        <button class="project-btn" data-modal="modal-american-psycho">View More</button>
+        <img src="Images/american-psycho-mockup.png" alt="American Psycho Poster Triptych mockup" class="project-image">
+    </section>
+    
+    <section class="project-card">
+        <p class="project-type">PRINT PROMOTIONAL CAMPAIGN</p>
+        <h3 class="project-title">Valletta Vibes</h3>
+        <p class="project-desc">
+            A set of promotional materials for Valletta Vibes, including a logo, poster, brochure, and editorial spread — designed to capture the energy and cultural rhythm of Malta’s capital.
+        </p>
+        <button class="project-btn" data-modal="modal-valletta-vibes">View More</button>
+        <img src="Images/valletta-vibes-mockup.png" alt="Valletta Vibes editorial spread mockup" class="project-image">
+    </section>
+    
+    
+    <!-- MODALS -->
+    
+    <div id="modal-unsung-hero" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="carousel">
+                <img src="Images/unsung-hero-mockup.png" class="modal-img" id="carousel-image" alt="Carousel Image">
+            </div>
+            <div class="carousel-controls">
+                <button class="prev">Prev</button>
+                <button class="next">Next</button>
+            </div>
+            <div class="magnifier-toggle">
+                <button class="toggle-magnifier" data-modal="modal-unsung-hero">Zoom</button>
+            </div>
+        </div>
+    </div>
+    
+    <div id="modal-baskerville" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="carousel">
+                <img src="Images/baskerville-mockup.png" class="modal-img" id="carousel-image" alt="Carousel Image">
+            </div>
+            <div class="carousel-controls">
+                <button class="prev">Prev</button>
+                <button class="next">Next</button>
+            </div>
+            <div class="magnifier-toggle">
+                <button class="toggle-magnifier" data-modal="modal-baskerville">Zoom</button>
+            </div>
+        </div>
+    </div>
+    
+    <div id="modal-signage" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="carousel">
+                <img src="Images/signage-editorial-mockup.png" class="modal-img" id="carousel-image" alt="Carousel Image">
+            </div>
+            <div class="carousel-controls">
+                <button class="prev">Prev</button>
+                <button class="next">Next</button>
+            </div>
+            <div class="magnifier-toggle">
+                <button class="toggle-magnifier" data-modal="modal-signage">Zoom</button>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div id="modal-karl-gerstner" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="carousel">
+                <img src="Images/akzidenz-grotesk-mockup.png" class="modal-img" id="carousel-image" alt="Carousel Image">
+            </div>
+            <div class="carousel-controls">
+                <button class="prev">Prev</button>
+                <button class="next">Next</button>
+            </div>
+            <div class="magnifier-toggle">
+                <button class="toggle-magnifier" data-modal="modal-karl-gerstner">Zoom</button>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div id="modal-chronocraft" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="carousel">
+                <img src="Images/chronocraft-front-page.png" class="modal-img" id="carousel-image" alt="Carousel Image">
+            </div>
+            <div class="carousel-controls">
+                <button class="prev">Prev</button>
+                <button class="next">Next</button>
+            </div>
+            <div class="magnifier-toggle">
+                <button class="toggle-magnifier" data-modal="modal-chronocraft">Zoom</button>
+            </div>
+        </div>
+    </div>
+    
+    <div id="modal-american-psycho" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="carousel">
+                <img src="Images/american-psycho-mockup.png" class="modal-img" id="carousel-image" alt="Carousel Image">
+            </div>
+            <div class="carousel-controls">
+                <button class="prev">Prev</button>
+                <button class="next">Next</button>
+            </div>
+            <div class="magnifier-toggle">
+                <button class="toggle-magnifier" data-modal="modal-american-psycho">Zoom</button>
+            </div>
+        </div>
+    </div>
+    
+    <div id="modal-valletta-vibes" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="carousel">
+                <img src="Images/valletta-vibes-mockup.png" class="modal-img" id="carousel-image" alt="Carousel Image">
+            </div>
+            <div class="carousel-controls">
+                <button class="prev">Prev</button>
+                <button class="next">Next</button>
+            </div>
+            <div class="magnifier-toggle">
+                <button class="toggle-magnifier" data-modal="modal-valletta-vibes">Zoom</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="projects-end"></div>
+    
+    <div class="recap-trigger" style="height: 150vh;"></div>
+    
+    <!-- Footer reveal trigger zone -->
+    <div class="footer-wrapper">
+        <footer class="footer">
+            
+            
+            <p>2025 Nicole Micallef — All rights reserved.</p>
+        </footer>
+    </div>
     
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
