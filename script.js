@@ -115,6 +115,8 @@ const modalImageSets = {
     ],
 };
 
+const buttons = document.querySelectorAll(".project-btn");
+
 buttons.forEach(button => {
     button.addEventListener('click', () => {
         const modalId = button.getAttribute('data-modal');
