@@ -252,36 +252,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
     
-    const newPrev = modal.querySelector(".modal-prev");
-    
-    newPrev.onclick = () => {
-        index = (index - 1 + images.length) % images.length;
-        imgEl.src = images[index];
-        
-        // Reset zoom state
-        const lens = modal.querySelector('.magnifier-lens');
-        if (lens) lens.remove();
-        imgEl.onmousemove = null;
-        imgEl.onmouseleave = null;
-        magnifierToggled[modalId] = false;
-        modal.querySelector('.toggle-magnifier').textContent = 'Zoom';
-    };
-    
-    
-    const newNext = modal.querySelector(".modal-next");
-    
-    newNext.onclick = () => {
-        index = (index + 1) % images.length;
-        imgEl.src = images[index];
-        
-        // Reset zoom state
-        const lens = modal.querySelector('.magnifier-lens');
-        if (lens) lens.remove();
-        imgEl.onmousemove = null;
-        imgEl.onmouseleave = null;
-        magnifierToggled[modalId] = false;
-        modal.querySelector('.toggle-magnifier').textContent = 'Zoom';
-    };
     
     
     function closeModal(modalId) {
