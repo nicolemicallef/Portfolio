@@ -1,3 +1,31 @@
+@font-face {
+    font-family: 'HelveticaNow-Regular';
+    src: url('Fonts/Helvetica/helvetica-now-regular.woff2') format('woff2'),
+    url('Fonts/Helvetica/helvetica-now-regular.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'HelveticaNow-Light';
+    src: url('Fonts/Helvetica/helvetica-now-light.woff2') format('woff2'),
+    url('Fonts/Helvetica/helvetica-now-light.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'HelveticaNow-Bold';
+    src: url('Fonts/Helvetica/helvetica-now-bold.woff2') format('woff2'),
+    url('Fonts/Helvetica/helvetica-now-bold.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +39,7 @@ html {
 body {
     background: #222;
     color: white;
-    font-family: 'Helvetica Neue';
+    font-family: 'HelveticaNow-Regular';
     height: 100%;
     overflow-x: hidden;
 }
@@ -25,9 +53,9 @@ body {
     justify-content: center;
     color: white;
     font-size: 3rem;
-    font-weight: bold;
+    font-family: 'HelveticaNow-Bold';
     text-align: center;
-    letter-spacing: 0.2rem;
+    letter-spacing: 0rem;
 }
 
 .pen-stage {
@@ -38,6 +66,7 @@ body {
     justify-content: flex-end;
     align-items: center;
     overflow: hidden;
+    padding-top: 120px;
 }
 
 .pen-cap,
@@ -94,6 +123,7 @@ body {
     padding: 4rem 2rem;
     text-align: center;
     letter-spacing: 1px;
+    font-family: 'HelveticaNow-Light';
 }
 .bio-photo {
     width: 200px;
@@ -106,18 +136,20 @@ body {
     font-size: 0.9rem;
     color: #aaa;
     margin-top: 1rem;
-    font-family: sans-serif;
+    font-family: 'HelveticaNow-Light'
 }
 .bio-title {
     font-size: 3rem;
     color: #f45e01;
     margin: 0.5rem 0;
+    font-family: 'HelveticaNow-Bold'
 }
 .bio-desc {
     font-size: 1.2rem;
     max-width: 600px;
     margin: auto;
     line-height: 1.5rem;
+    font-family: 'HelveticaNow-Light'
 }
 
 .my-work .bio-title{
@@ -146,18 +178,22 @@ body {
 .project-type {
     font-size: 0.9rem;
     color: #aaa;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.2em;
     padding-bottom: 10px;
+    font-family: 'HelveticaNow-Light';
 }
 .project-title {
     font-size: 2rem;
+    font-family: 'HelveticaNow-Bold';
+    letter-spacing: 0px;
 }
 
 .project-desc {
     font-size: 1rem;
     margin: 1rem 0;
     line-height: 1.35rem;
-    letter-spacing: 0.06rem
+    letter-spacing: 0.02rem;
+    font-family: 'HelveticaNow-Light';
 }
 .project-btn {
     border: 2px solid #f45e01;
@@ -168,7 +204,7 @@ body {
     border-radius: 30px;
     transition: all 0.3s ease;
     cursor: pointer;
-    font-family: inherit;
+    font-family: 'HelveticaNow-Light'
 }
 
 .project-btn:hover {
@@ -194,6 +230,7 @@ body {
     left: 0;
     z-index: 10;
     box-shadow: 0 20px 15px #222;
+    font-family: 'HelveticaNow-Bold';
 }
 
 .nav-container {
@@ -201,7 +238,7 @@ body {
     justify-content: space-between;
     align-items: center;
     font-weight: bold;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 
 .nav-container .logo{
@@ -249,6 +286,7 @@ footer {
     padding-bottom: 72vh;
     z-index: 0;
     position: relative;
+    font-family: 'HelveticaNow-Light'
 }
 
 
@@ -317,14 +355,16 @@ footer {
 }
 
 .carousel-controls button {
+    font-family: 'HelveticaNow-Bold';
     background-color: transparent;
     border: 2px solid #f45e01;
+    border-radius: 30px;
     color: #f45e01;
     padding: 0.5rem 1.5rem;
-    border-radius: 4px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
+
 .carousel-controls button:hover {
     background-color: #f45e01;
     color: #111;
@@ -350,14 +390,14 @@ footer {
 }
 
 .toggle-magnifier {
+    font-family: 'HelveticaNow-Bold';
     margin-top: 1rem;
     padding: 0.5rem 1.5rem;
     background-color: #f45e01;
     color: #111;
     border: none;
-    border-radius: 4px;
+    border-radius: 30px;
     cursor: pointer;
-    font-weight: bold;
     transition: background-color 0.2s ease;
 }
 .toggle-magnifier:hover {
@@ -394,6 +434,8 @@ footer {
 }
 
 .contact-fullscreen {
+    font-family: 'HelveticaNow-Regular';
+    letter-spacing: -5px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -402,6 +444,7 @@ footer {
     background-color: #222; /* your page background */
     color: #eee;
     text-align: center;
+    padding-top: 120px;
 }
 
 
@@ -412,7 +455,7 @@ footer {
 }
 
 .contact-text em {
-    font-style: italic;
+    font-family: 'HelveticaNow-Regular';
 }
 
 
@@ -462,4 +505,109 @@ footer {
     font-size: 0.9rem;
     z-index: 0;
     position: relative;
+}
+
+.contact-modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-modal-content {
+    background-color: #222;
+    padding: 3rem 2rem;
+    border-radius: 16px;
+    text-align: center;
+    color: white;
+    max-width: 500px;
+    width: 90%;
+    position: relative;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+.contact-close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    color: white;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.contact-close:hover {
+    color: #f45e01;
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.contact-links a {
+    font-size: 1.5rem;
+    color: #f45e01;
+    text-decoration: none;
+    border: 2px solid #f45e01;
+    border-radius: 30px;
+    padding: 0.6rem 1.5rem;
+    transition: 0.3s ease;
+}
+
+.contact-links a:hover {
+    background-color: #f45e01;
+    color: #111;
+}
+
+.email-copy {
+    margin-top: 1.5rem;
+}
+
+.contact-link-btn {
+    font-size: 1.5rem;
+    color: #f45e01;
+    text-decoration: none;
+    border: 2px solid #f45e01;
+    border-radius: 30px;
+    padding: 0.6rem 1.5rem;
+    transition: 0.3s ease;
+    background: transparent;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-family: 'HelveticaNow-Regular';
+    text-align: center;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.contact-link-btn:hover {
+    background-color: #f45e01;
+    color: #111;
+}
+
+
+#copy-confirmation {
+    display: inline-block;
+    margin-left: 1rem;
+    color: #f45e01;
+    font-size: 1rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+#copy-confirmation.visible {
+    opacity: 1;
 }

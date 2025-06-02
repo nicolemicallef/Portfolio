@@ -272,4 +272,42 @@ document.addEventListener("DOMContentLoaded", () => {
         if (toggleBtn) toggleBtn.textContent = 'Zoom';
     }
     
+    // Contact Modal Logic
+    const openContactBtn = document.getElementById('open-contact-modal');
+    const contactModal = document.getElementById('contact-modal');
+    
+    if (openContactBtn && contactModal) {
+        const contactCloseBtn = contactModal.querySelector('.contact-close');
+        
+        openContactBtn.addEventListener('click', () => {
+            contactModal.style.display = 'flex';
+        });
+        
+        contactCloseBtn.addEventListener('click', () => {
+            contactModal.style.display = 'none';
+        });
+        
+        contactModal.addEventListener('click', (e) => {
+            if (e.target === contactModal) {
+                contactModal.style.display = 'none';
+            }
+        });
+    }
+    
+    const copyEmailBtn = document.getElementById('copy-email-btn');
+    
+    if (copyEmailBtn) {
+        copyEmailBtn.addEventListener('click', () => {
+            const email = "nicole-micallef@outlook.com";
+            navigator.clipboard.writeText(email).then(() => {
+                const originalText = copyEmailBtn.textContent;
+                copyEmailBtn.textContent = "Copied!";
+                
+                setTimeout(() => {
+                    copyEmailBtn.textContent = originalText;
+                }, 2000);
+            });
+        });
+    }
+    
 });
