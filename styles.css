@@ -30,7 +30,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    outline: 1px solid rgba(255, 0, 0, 0.1); /* Light red outlines for debugging layout */
 }
 
 html {
