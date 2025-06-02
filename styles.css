@@ -4,10 +4,14 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: #222;
     color: white;
-    font-family: sans-serif;
+    font-family: 'Helvetica Neue';
     height: 100%;
     overflow-x: hidden;
 }
@@ -21,7 +25,7 @@ body {
     justify-content: center;
     color: white;
     font-size: 3rem;
-    font-weight: bold;
+    font-weight: medium;
     text-align: center;
     letter-spacing: 0.2rem;
 }
@@ -70,6 +74,14 @@ body {
 
 .spacer-two {
     height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.spacer-three {
+    height: 30vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -194,6 +206,9 @@ body {
 
 .nav-container .logo{
     letter-spacing: 3px;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
 }
 
 .nav-links {
@@ -376,4 +391,75 @@ footer {
 
 .pen-overlay.hide {
     opacity: 0;
+}
+
+.contact-fullscreen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    padding: 2rem;
+    background-color: #222; /* your page background */
+    color: #eee;
+    text-align: center;
+}
+
+
+.contact-text p {
+    font-size: 5rem;
+    line-height: 1.3;
+    margin-bottom: 1.5rem;
+}
+
+.contact-text em {
+    font-style: italic;
+}
+
+
+.cta-line {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.reach-out {
+    display: inline-block;
+    border: 2px solid #f45e01;
+    padding: 0.6rem 2rem;
+    border-radius: 999px;
+    font-size: 3rem;
+    text-decoration: none;
+    color: #f45e01;
+    transition: 0.3s ease;
+}
+
+.reach-out:hover {
+    background-color: #f45e01;
+    border: 2px solid #f45e01;
+    color: #1f1f1f;
+}
+
+.blank-line {
+    border-bottom: 2px solid #eee;
+    padding: 0 0.4rem;
+    margin: 0 0.3rem;
+    font-weight: 500;
+}
+
+.star {
+    color: #f45e01;
+    font-size: 2rem;
+    margin-left: 0.4rem;
+}
+
+footer {
+    background-color: #222;
+    color: #999;
+    text-align: center;
+    padding: 2rem;
+    padding-bottom: 2rem;
+    font-size: 0.9rem;
+    z-index: 0;
+    position: relative;
 }
